@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Admin Dashboard</title>
+  <title>Moderator Dashboard</title>
   <link rel="stylesheet" href="common.css" />
 </head>
 <body>
   <div class="nav">
     <div class="container nav-inner">
-      <div class="brand">Admin Dashboard</div>
+      <div class="brand">Moderator Dashboard</div>
       <div class="nav-links">
         <a href="homePage.html">Home</a>
         <a href="#" id="logout">Logout</a>
@@ -19,20 +19,20 @@
 
   <div class="container">
     <div class="hero shadow">
-      <h1 style="margin:0 0 6px">Manage Posts</h1>
-      <p class="muted">Approve, reject, or review user submitted lost & found posts (prototype only).</p>
+      <h1 style="margin:0 0 6px">Moderate Posts</h1>
+      <p class="muted">Moderators can approve/reject and add quick notes (prototype only).</p>
       <p id="guard" class="err"></p>
       <div class="kpi" id="kpi"></div>
     </div>
 
     <div class="grid">
       <div class="card col-12 shadow">
-        <h2 class="form-title">Pending / Review Queue</h2>
+        <h2 class="form-title">Moderation Queue</h2>
         <div id="postList"></div>
       </div>
     </div>
   </div>
 
-  <script src="adminDashboard.js"></script>
+  <script src="moderatorDashboard.js"></script>
 </body>
 </html>

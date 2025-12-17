@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Lost & Found - Home</title>
+  <link rel="stylesheet" href="common.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Lost & Found</div>
+      <div class="nav-links">
+        <a href="homePage.html">Home</a>
+        <a href="../Login/Login.html">User Login</a>
+        <a href="../Login/Registration.html">Register</a>
+        <a href="../Dashboard/adminLogin.html">Admin</a>
+        <a href="../Dashboard/Moderator.html">Moderator</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero shadow">
+      <h1>Find lost items. Return found items.</h1>
+      <p class="muted">This is a simple frontend prototype. Next you can connect a database + backend (PHP/Node) later.</p>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="registration.html">Create Account</a>
+        <a class="btn secondary" href="login.html">Login</a>
+        <a class="btn ghost" href="adminLogin.html">Admin Login</a>
+      </div>
+      <p id="homeMsg" class="ok"></p>
+    </div>
+
+    <div class="grid">
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Recent Lost Posts</h2>
+        <div id="lostList"></div>
+      </div>
+
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Recent Found Posts</h2>
+        <div id="foundList"></div>
+      </div>
+
+      <div class="card col-12 shadow">
+        <h2 class="form-title">Quick Stats</h2>
+        <div class="kpi" id="kpi"></div>
+        <div class="footer">Tip: Use dashboards to approve/reject posts (prototype).</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="homePage.js"></script>
+</body>
+</html>

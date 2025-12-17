@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>User Login</title>
+  <link rel="stylesheet" href="common.css" />
 </head>
 <body>
-    
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Lost & Found</div>
+      <div class="nav-links">
+        <a href="homePage.html">Home</a>
+        <a href="registration.html">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card col-6 shadow">
+        <h2 class="form-title">User Login</h2>
+
+        <form id="loginForm" onsubmit="return false;">
+          <label>Email</label>
+          <input id="email" type="text" placeholder="example@mail.com" />
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="********" />
+
+          <p id="err" class="err"></p>
+          <p id="ok" class="ok"></p>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <button id="btnLogin" class="btn" type="button">Login</button>
+            <a class="btn ghost" href="registration.html">Create Account</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Demo Info</h2>
+        <p class="muted">Register a user first, then login with the same email + password.</p>
+        <div class="sep"></div>
+        <p class="muted">Admin login: go to <b>Admin</b> page</p>
+        <p class="muted">Moderator login: go to <b>Moderator</b> page</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
 </body>
 </html>

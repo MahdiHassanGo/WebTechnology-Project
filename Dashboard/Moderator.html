@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Moderator Login</title>
+  <link rel="stylesheet" href="common.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Lost & Found</div>
+      <div class="nav-links">
+        <a href="homePage.html">Home</a>
+        <a href="login.html">User</a>
+        <a href="adminLogin.html">Admin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Moderator Login</h2>
+
+        <form onsubmit="return false;">
+          <label>Username</label>
+          <input id="username" type="text" placeholder="moderator" />
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="mod12345" />
+
+          <p id="err" class="err"></p>
+          <p id="ok" class="ok"></p>
+
+          <button id="btnMod" class="btn" type="button">Login as Moderator</button>
+        </form>
+      </div>
+
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Demo Credentials</h2>
+        <p class="muted"><b>Username:</b> moderator</p>
+        <p class="muted"><b>Password:</b> mod12345</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="moderatorLogin.js"></script>
+</body>
+</html>

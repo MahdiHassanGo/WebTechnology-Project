@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>User Registration</title>
+  <link rel="stylesheet" href="common.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Lost & Found</div>
+      <div class="nav-links">
+        <a href="homePage.html">Home</a>
+        <a href="login.html">User Login</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Create Account</h2>
+
+        <form id="regForm" onsubmit="return false;">
+          <label>Full Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+
+          <label>Email</label>
+          <input id="email" type="text" placeholder="example@mail.com" />
+
+          <label>Password</label>
+          <input id="password" type="password" placeholder="min 6 chars" />
+
+          <label>Confirm Password</label>
+          <input id="confirm" type="password" placeholder="repeat password" />
+
+          <p id="err" class="err"></p>
+          <p id="ok" class="ok"></p>
+
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <button id="btnCreate" class="btn" type="button">Create Account</button>
+            <a class="btn ghost" href="login.html">Go to Login</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="card col-6 shadow">
+        <h2 class="form-title">Note</h2>
+        <p class="muted">This is frontend-only. Data is saved in <b>localStorage</b> for demo.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="registration.js"></script>
+</body>
+</html>
