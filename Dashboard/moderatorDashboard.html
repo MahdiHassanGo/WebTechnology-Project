@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Admin Dashboard</title>
+  <title>Moderator Dashboard</title>
 
   <style>
     *{box-sizing:border-box}
@@ -30,18 +30,19 @@
     .thumb{width:78px;height:78px;border-radius:12px;background:#eef2f7;border:1px dashed #cbd5e1;display:flex;align-items:center;justify-content:center;font-size:12px;color:#334155}
     .badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;background:#eef2ff;border:1px solid #e0e7ff;color:#1e3a8a;margin-left:6px}
     .meta{display:flex;flex-wrap:wrap;gap:10px;color:#555;font-size:13px;margin:6px 0 10px}
+    input{width:100%;padding:11px 12px;border:1px solid #d6d9e6;border-radius:10px;font-size:14px;outline:none}
+    input:focus{border-color:#0ea5e9}
     .btn{border:0;padding:9px 10px;border-radius:10px;background:#0ea5e9;color:#fff;cursor:pointer;font-weight:600;font-size:13px}
     .btn:hover{opacity:.95}
     .btn.danger{background:#ef4444}
     .btn.ghost{background:#fff;color:#0f172a;border:1px solid #d6d9e6}
-    .actions{display:flex;gap:8px;flex-wrap:wrap}
-    .post-card{margin-bottom:10px}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
   </style>
 </head>
 <body>
   <div class="nav">
     <div class="container nav-inner">
-      <div class="brand">Admin Dashboard</div>
+      <div class="brand">Moderator Dashboard</div>
       <div class="nav-links">
         <a href="homePage.html">Home</a>
         <a href="#" id="logout">Logout</a>
@@ -51,20 +52,20 @@
 
   <div class="container">
     <div class="hero">
-      <h1 style="margin:0 0 6px">Manage Posts</h1>
-      <p class="muted">Approve, reject, or review user submitted lost & found posts (prototype only).</p>
+      <h1 style="margin:0 0 6px">Moderate Posts</h1>
+      <p class="muted">Moderators can approve/reject and add quick notes (prototype only).</p>
       <p id="guard" class="err"></p>
       <div class="kpi" id="kpi"></div>
     </div>
 
     <div class="grid">
       <div class="card">
-        <h2 class="form-title">Pending / Review Queue</h2>
+        <h2 class="form-title">Moderation Queue</h2>
         <div id="postList"></div>
       </div>
     </div>
   </div>
 
-  <script src="adminDashboard.js"></script>
+  <script src="moderatorDashboard.js"></script>
 </body>
 </html>
